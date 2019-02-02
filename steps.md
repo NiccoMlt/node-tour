@@ -15,7 +15,7 @@ Folder structure:
 │   └───stylesheets
 │       └───style.css
 ├───routes
-│   └───index.js
+│   ├───index.js
 │   └───users.js
 ├───.gitignore
 ├───app.js
@@ -31,4 +31,27 @@ Current dependencies:
 - ```debug```
 - ```express```
 - ```morgan```
+
+### Step 1.1: folder structure refactor ###
+
+As suggested in many _best practice collections_, structure repo in two main blocks: backend and frontend.
+
+New folder structure:
+```
+├───bin
+├───backend
+│   ├───public
+│   │   ├───images
+│   │   ├───javascripts
+│   │   └───stylesheets
+│   │       └───style.css
+│   ├───routes
+│   │   ├───index.js
+│   │   └───users.js
+│   └───app.js
+├───frontend
+├───node_modules
+├───package.json
+└───package-lock.json
+```
 
