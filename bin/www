@@ -3,7 +3,7 @@
 /**
  * Module dependencies.
  */
-const app = require('../backend/built/app')
+const app = require('../backend/dist/app')
 const debug = require('debug')('node-tour:server')
 const http = require('http')
 
