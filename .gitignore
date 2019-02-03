@@ -218,3 +218,4 @@ built
 
 # Babel output folder
 lib
+dist

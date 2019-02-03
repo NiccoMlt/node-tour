@@ -134,3 +134,7 @@ with `npm install --save-dev --save-exact prettier` I installed Prettier trackin
 
 Following both [official documentation](https://prettier.io/docs/en/precommit.html) and [Monsanto blog post](http://engineering.monsanto.com/2018/09/26/using-prettier/),
 I added pre-commit hooks in `.huskyrc.yml` file which execute `pretty-quick` on stage files before commit.
+
+## Step 5: Angular
+
+Import Angular Tour of Heroes app from my other repo: [https://github.com/NiccoMlt/Angular-Tour-of-Heroes](https://github.com/NiccoMlt/Angular-Tour-of-Heroes) and serve it.
