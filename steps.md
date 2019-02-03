@@ -104,3 +104,8 @@ following official [CLI guide](https://palantir.github.io/tslint/usage/cli/), I 
 and initialized it with ```tslint --init```; then, I converted JSON file to YAML.
 
 I also added compatibility with ESLint rules and, as ESLint, extend StandardJS rules; currently, I chose ```tslint-config-standard-plus```.
+
+### Step 3.2: Babel ###
+
+Following official [setup guide](https://babeljs.io/setup#installation) , I installed Babel Core & CLI locally 
+and configured ```build``` script inside ```package.json```.
