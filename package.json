@@ -49,5 +49,10 @@
         "tslint-config-standard-plus": "^2.1.3",
         "tslint-eslint-rules": "^5.4.0",
         "typescript": "^3.3.1"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NiccoMlt/node-tour.git"
+    },
+    "homepage": "https://github.com/NiccoMlt/node-tour#readme"
 }
