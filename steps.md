@@ -96,3 +96,13 @@ Then, I install TypeScript as development dependency and create a ```tsconfig.js
 - ```outDir```: output transpiled files to ```backend/built``` folder;
 - ```allowJs```: accept JavaScript files as input;
 - ```target``` ES5 compilation.
+
+### Step 3.2: TSLint ###
+
+To ensure code quality, I add also TSLint to the project:
+following official [CLI guide](https://palantir.github.io/tslint/usage/cli/), I installed it as development dependency 
+and initialized it with ```tslint --init```.
+
+### Step 3.2: Babel ###
+
+Following official [setup guide](https://babeljs.io/setup) 
