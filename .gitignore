@@ -73,6 +73,7 @@ typings/
 
 # Serverless directories
 .serverless
+
 ### macOS template
 # General
 .DS_Store
@@ -100,12 +101,14 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
 ### VisualStudioCode template
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
 ### Linux template
 *~
 
@@ -120,6 +123,7 @@ Temporary Items
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
+
 ### Windows template
 # Windows thumbnail cache files
 Thumbs.db
@@ -207,3 +211,7 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+## Custom
+
+# TypeScript output folder
+built

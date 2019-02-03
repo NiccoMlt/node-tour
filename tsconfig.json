@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": true,
+    "outDir": "./backend/built",
+    "target": "es5"
+  },
+  "include": [
+    "./backend/src/**/*"
+  ]
+}
