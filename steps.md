@@ -55,3 +55,8 @@ New folder structure:
 └───package-lock.json
 ```
 
+## Step 2: ESLint ##
+
+Following official [getting started](https://eslint.org/docs/user-guide/getting-started), add ESLint to the project.
+
+Because I love no semicolon style, currently I extend StandardJS rules.
