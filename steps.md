@@ -105,7 +105,19 @@ and initialized it with ```tslint --init```; then, I converted JSON file to YAML
 
 I also added compatibility with ESLint rules and, as ESLint, extend StandardJS rules; currently, I chose ```tslint-config-standard-plus```.
 
-### Step 3.2: Babel ###
+### Step 3.3: Babel ###
 
 Following official [setup guide](https://babeljs.io/setup#installation) , I installed Babel Core & CLI locally 
 and configured ```build``` script inside ```package.json```.
+
+### Step 3.4: TypeScript-Babel integration ###
+
+Following these [two](https://iamturns.com/typescript-babel/) [tutorials](https://blogs.msdn.microsoft.com/typescript/2018/08/27/typescript-and-babel-7/), 
+I configured Babel to be used to compile the project.
+
+Firstly:
+```bash
+npm install --save-dev @babel/preset-typescript @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread
+```
+
+Then i configured ```.babelrc``` and ```tsconfig.json``` accordingly to tutorials.
