@@ -3,9 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "babel backend/src --out-dir ./backend/lib --extensions \".js,.ts,.tsx\"",
-    "check-types": "tsc",
-    "lint": "tslint '**/*.ts'",
+    "build": "npm run build:types && npm run build:js",
+    "build:js": "babel backend/src --out-dir ./backend/lib --extensions \".js,.ts,.tsx\" --source-maps inline",
+    "build:types": "tsc --emitDeclarationOnly",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "lint": "npm run lint:js && npm run lint:ts",
+    "lint:js": "eslint backend",
+    "lint:ts": "tslint --project .",
     "start": "node ./bin/www"
   },
   "dependencies": {
