@@ -101,8 +101,6 @@ Then, I install TypeScript as development dependency and create a ```tsconfig.js
 
 To ensure code quality, I add also TSLint to the project:
 following official [CLI guide](https://palantir.github.io/tslint/usage/cli/), I installed it as development dependency 
-and initialized it with ```tslint --init```.
+and initialized it with ```tslint --init```; then, I converted JSON file to YAML.
 
-### Step 3.2: Babel ###
-
-Following official [setup guide](https://babeljs.io/setup) 
+I also added compatibility with ESLint rules and, as ESLint, extend StandardJS rules; currently, I chose ```tslint-config-standard-plus```.
