@@ -1,0 +1,12 @@
+<h1>{{ title }}</h1>
+<!--The double curly braces are Angular's interpolation binding syntax-->
+<nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+</nav>
+<!--<app-heroes></app-heroes>-->
+<!--To display the HeroesComponent, you must add it to the template of the shell AppComponent-->
+<router-outlet></router-outlet>
+<!--The <router-outlet> tells the router where to display routed views-->
+<app-messages></app-messages>
+<!--Add a MessagesComponent that displays app messages at the bottom of the screen-->
