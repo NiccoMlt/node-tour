@@ -210,3 +210,5 @@ New folder structure:
     ├───package.json
     └───yarn.lock
 ```
+
+Now a single ```yarn install``` should be sufficient to setup the project.
