@@ -152,3 +152,61 @@ cd frontend
 
 yarn install
 ```
+
+### Step 6.1: Yarn Workspaces
+
+The migration to Yarn was done mostly for the Workspaces feature learned reading [their blog post](https://yarnpkg.com/blog/2017/08/02/introducing-workspaces/).
+
+Following [official documentation](https://yarnpkg.com/lang/en/docs/workspaces/), I did these steps:
+
+- Move current root ```package.json``` file (which was actually related to the backend server) in ```/backend``` folder.
+- Move ```/bin``` folder inside backend.
+- Create new ```/packages``` folder and move frontend and backend there.
+- Create a root ```package.json``` file with all folders in ```/packages``` folder as workspaces.
+- Declare ```nohoist``` for angular packages to ensure compatibility (see [here](https://github.com/angular/angular-cli/issues/7097)).
+
+New folder structure:
+
+```
+└───packages
+    ├───backend
+    │   ├───bin
+    │   │   └───www
+    │   ├───public
+    │   │   ├───images
+    │   │   ├───javascripts
+    │   │   └───stylesheets
+    │   │       └───style.css
+    │   ├───src
+    │   │   ├───routes
+    │   │   │   ├───index.ts
+    │   │   │   └───users.ts
+    │   │   └───app.ts
+    │   ├───.babelrc
+    │   ├───.eslintrc.yml
+    │   ├───.huskyrc.yml
+    │   ├───.prettierrc.yml
+    │   ├───package.json
+    │   ├───tsconfig.json
+    │   └───tslint.yaml
+    ├───frontend
+    │   ├───e2e
+    │   │   ├───src
+    │   │   │   ├───app.e2e-spec.ts
+    │   │   │   └───app.po.ts
+    │   │   └───tsconfig.e2e.json
+    │   ├───src
+    │   │   ├───app
+    │   │   ├───assets
+    │   │   └───environments
+    │   ├───.sass-lint.yml
+    │   ├───angular.json
+    │   ├───package.json
+    │   ├───tsconfig.json
+    │   └───tslint.yaml
+    ├───.editorconfig
+    ├───.eslintignore
+    ├───.gitignore
+    ├───package.json
+    └───yarn.lock
+```

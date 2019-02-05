@@ -12,10 +12,10 @@
         "noImplicitReturns": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "outDir": "./backend/built",
+        "outDir": "./built",
         // Enable strictest settings like strictNullChecks & noImplicitAny.,
         "strict": true,
         "target": "esnext"
     },
-    "include": ["./backend/src/**/*"]
+    "include": ["./src/**/*"]
 }
