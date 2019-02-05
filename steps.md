@@ -138,3 +138,17 @@ I added pre-commit hooks in `.huskyrc.yml` file which execute `pretty-quick` on 
 ## Step 5: Angular
 
 Import Angular Tour of Heroes app from my other repo: [https://github.com/NiccoMlt/Angular-Tour-of-Heroes](https://github.com/NiccoMlt/Angular-Tour-of-Heroes) and serve it.
+
+## Step 6: Yarn
+
+Following official [migration guide](https://yarnpkg.com/en/docs/migrating-from-npm), I migrate dependency management from NPM to Yarn.
+
+Now, to configure repo, the commands should be:
+
+```bash
+yarn install
+
+cd frontend
+
+yarn install
+```
